@@ -22,6 +22,7 @@
 		4945CBBBE66E46A2AA2E2148 /* PluginRTCPeerConnectionConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1DAB8CEDA7430989D05726 /* PluginRTCPeerConnectionConstraints.swift */; };
 		4D8BF21D201717E100CE2930 /* TCAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8BF21C201717E100CE2930 /* TCAlertHelper.m */; };
 		4D8BF2212017229900CE2930 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D8BF21F2017229800CE2930 /* README.md */; };
+		4D8BF2232017230B00CE2930 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4D8BF2222017230A00CE2930 /* .gitignore */; };
 		4DEEB51D6EEA45D3A3290DAB /* PluginRTCDTMFSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002349ED9D74467BB7F800C /* PluginRTCDTMFSender.swift */; };
 		5AC3ECD480AC47DE87657E8B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD60DCD1E31841F9A002909B /* AudioToolbox.framework */; };
 		61C84EB5B7564DFBB957E227 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2601011B554EE0ACBC3A2B /* CoreVideo.framework */; };
@@ -106,6 +107,7 @@
 		4D8BF21B201717E100CE2930 /* TCAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAlertHelper.h; sourceTree = "<group>"; };
 		4D8BF21C201717E100CE2930 /* TCAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAlertHelper.m; sourceTree = "<group>"; };
 		4D8BF21F2017229800CE2930 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D8BF2222017230A00CE2930 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4EE021A34ACA469BB18AE3F9 /* libc++.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		567C0259D7D649E586C7CC0E /* RTCVideoTrack.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCVideoTrack.h; path = "cordova-plugin-iosrtc/RTCVideoTrack.h"; sourceTree = "<group>"; };
 		56F6D840CB054095ACAE8386 /* RTCPeerConnectionFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnectionFactory.h; path = "cordova-plugin-iosrtc/RTCPeerConnectionFactory.h"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
 			children = (
+				4D8BF2222017230A00CE2930 /* .gitignore */,
 				4D8BF21F2017229800CE2930 /* README.md */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
@@ -434,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8BF2232017230B00CE2930 /* .gitignore in Resources */,
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				4D8BF2212017229900CE2930 /* README.md in Resources */,
