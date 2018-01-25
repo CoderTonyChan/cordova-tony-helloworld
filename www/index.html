@@ -3,21 +3,21 @@
     <head>
         <title>AMAlert</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-            <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-            <script type="text/javascript" charset="utf-8">
-                //调用OC插件方法
-                function alertShow() {
-                    //以字符串形式调用OC注入模型的实例方法
-                    //通过cordova 将我们的模型名称,方法名,参数,成功回调的func及失败回调的func 传入
-                    cordova.exec(alertSuccess,alertFail,"ocAlertModel","showAlertWithTitle",["Hey,I'm JS!"]);
-                }
-                
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            //调用OC插件方法
+            function alertShow() {
+                //以字符串形式调用OC注入模型的实例方法
+                //通过cordova 将我们的模型名称,方法名,参数,成功回调的func及失败回调的func 传入
+                cordova.exec(alertSuccess,alertFail,"ocAlertModel","showAlertWithTitle",["Hey,I'm JS!"]);
+            }
+        
             function alertError() {
                 //以字符串形式调用OC注入模型的实例方法
                 //通过cordova 将我们的模型名称,方法名,参数,成功回调的func及失败回调的func 传入
                 cordova.exec(alertSuccess,alertFail,"ocAlertModel","showAlertWithTitle",[]);
             }
-            
+        
             //调用成功的回调函数
             function alertSuccess(msg) {
                 alert(msg);
@@ -27,12 +27,43 @@
             function alertFail(msg) {
                 alert('调用OC失败: ' + msg);
             }
-            </script>
-            </head>
+        
+            var isRecording = false;
+            function startRecord() {
+                cordova.plugins.Replay.startRecording(true,
+                                                      function() {
+                                                        isRecording = true;
+                                                      }, function(err) {
+                                                        console.log(err);
+                                                      }
+                                                      );
+            };
+        
+            function stopRecording() {
+                cordova.plugins.Replay.stopRecording(
+                                                     function() {
+                                                     isRecording = false;
+                                                        console.log('ok!');
+                                                     }, function(err) {
+                                                        console.log(err);
+                                                     }
+                                                     );
+            }
+        
+        
+            function pushTZImagePickerController() {
+                cordova.exec(alertSuccess,alertFail,"cordova-plugin-LSImagePicker","pushTZImagePickerController",[]);
+            }
+        
+        </script>
+    </head>
     
     <body style="padding-top:50px">
         <button style="font-size:17px;" onclick="alertShow();">调用OC插件</button> <br>
         <button style="font-size:17px;" onclick="alertError();">调用OC插件2</button> <br>
+        <button style="font-size:17px;" onclick="startRecord();">录制</button> <br>
+        <button style="font-size:17px;" onclick="stopRecording();">停止</button> <br>
+        <button style="font-size:17px;" onclick="pushTZImagePickerController();">上传1</button> <br>
     </body>
 </html>
 

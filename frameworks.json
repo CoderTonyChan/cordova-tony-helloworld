@@ -11,5 +11,7 @@
     "libc++.dylib": 1,
     "libstdc++.dylib": 1,
     "libsqlite3.0.dylib": 1,
-    "VideoToolbox.framework": 1
+    "VideoToolbox.framework": 1,
+    "ReplayKit.framework": 1,
+    "UIKit.framework": 1
 }

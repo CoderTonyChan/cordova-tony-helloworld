@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		019C7676234D473DA0401182 /* PluginMediaStreamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC41CC4EF594683BE01FA07 /* PluginMediaStreamRenderer.swift */; };
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		04A467E26DC247EB9EAF165C /* CDVCordovaReplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC1636760C545F7B91E0B1E /* CDVCordovaReplay.swift */; };
 		1B398C54CF904D3889155C13 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F56753962A4B3085CAC5A7 /* libsqlite3.0.dylib */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -23,6 +24,22 @@
 		4D8BF21D201717E100CE2930 /* TCAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8BF21C201717E100CE2930 /* TCAlertHelper.m */; };
 		4D8BF2212017229900CE2930 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D8BF21F2017229800CE2930 /* README.md */; };
 		4D8BF2232017230B00CE2930 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4D8BF2222017230A00CE2930 /* .gitignore */; };
+		4DDA1B022019798A00623798 /* LSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B012019798A00623798 /* LSImagePicker.m */; };
+		4DDA1B202019799B00623798 /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B032019799700623798 /* TZPhotoPickerController.m */; };
+		4DDA1B212019799B00623798 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B052019799700623798 /* UIView+Layout.m */; };
+		4DDA1B222019799B00623798 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B092019799800623798 /* TZProgressView.m */; };
+		4DDA1B232019799B00623798 /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B0A2019799800623798 /* TZPhotoPreviewCell.m */; };
+		4DDA1B242019799B00623798 /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B0D2019799800623798 /* TZAssetCell.m */; };
+		4DDA1B252019799B00623798 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA1B0E2019799800623798 /* TZImagePickerController.bundle */; };
+		4DDA1B262019799B00623798 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B112019799900623798 /* NSBundle+TZImagePicker.m */; };
+		4DDA1B272019799B00623798 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B132019799900623798 /* TZLocationManager.m */; };
+		4DDA1B282019799B00623798 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B152019799900623798 /* TZGifPhotoPreviewController.m */; };
+		4DDA1B292019799B00623798 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B172019799900623798 /* TZImagePickerController.m */; };
+		4DDA1B2A2019799B00623798 /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B192019799A00623798 /* TZPhotoPreviewController.m */; };
+		4DDA1B2B2019799B00623798 /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B1B2019799A00623798 /* TZImageManager.m */; };
+		4DDA1B2C2019799B00623798 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B1C2019799A00623798 /* TZVideoPlayerController.m */; };
+		4DDA1B2D2019799B00623798 /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B1D2019799A00623798 /* TZAssetModel.m */; };
+		4DDA1B2E2019799B00623798 /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDA1B1E2019799A00623798 /* TZImageCropManager.m */; };
 		4DEEB51D6EEA45D3A3290DAB /* PluginRTCDTMFSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = F002349ED9D74467BB7F800C /* PluginRTCDTMFSender.swift */; };
 		5AC3ECD480AC47DE87657E8B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD60DCD1E31841F9A002909B /* AudioToolbox.framework */; };
 		61C84EB5B7564DFBB957E227 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD2601011B554EE0ACBC3A2B /* CoreVideo.framework */; };
@@ -37,11 +54,13 @@
 		AC98D72D9B194C2FBB6BFAA2 /* libWebRTC-LATEST-Universal-Release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F9BC20E39494D95C6B843 /* libWebRTC-LATEST-Universal-Release.a */; };
 		B753610687C44784B8C62D13 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45F0EFE6DB047628A2C249E /* AVFoundation.framework */; };
 		B9CF87CFD77B495F8925CE0E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D68D55BD7349A9ABD151CD /* libstdc++.dylib */; };
+		BE898A5A6667470FAA9C2763 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80DFC652BCD4C02826EC33F /* ReplayKit.framework */; };
 		CAA8EBDCC6974E17BD208BCD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823858DF3AB413A975842F4 /* CoreMedia.framework */; };
 		D6720FB2775D4135B985AD13 /* iosrtcPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC23EF58AAD48CEAF7F9B55 /* iosrtcPlugin.swift */; };
 		EDE10EFB37394CE0BA4011C1 /* PluginRTCDataChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47E09EDCAC412CAE97195C /* PluginRTCDataChannel.swift */; };
 		F003E42A5E4D46A98B655317 /* PluginGetUserMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E929B742CA242899EB623FD /* PluginGetUserMedia.swift */; };
 		F452F68C71A1497B8B124C09 /* PluginRTCPeerConnectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76931A108B3D44BF9A937041 /* PluginRTCPeerConnectionConfig.swift */; };
+		F9C351A6EEE3495184549BB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E14F0E846544F9837A4979 /* UIKit.framework */; };
 		FDA1633205FB4B60BE2107E4 /* PluginUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749DA8FFAB041DD803A8D8F /* PluginUtils.swift */; };
 		FDF3AC10966945BB8D3E383B /* PluginRTCPeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC08A343D24947A519E0A6 /* PluginRTCPeerConnection.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +114,7 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		34E14F0E846544F9837A4979 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		391C1F29270B408FAC22FFE1 /* RTCPeerConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnection.h; path = "cordova-plugin-iosrtc/RTCPeerConnection.h"; sourceTree = "<group>"; };
 		39DF9D2DE7E846DE8A75046A /* RTCAVFoundationVideoSource.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCAVFoundationVideoSource.h; path = "cordova-plugin-iosrtc/RTCAVFoundationVideoSource.h"; sourceTree = "<group>"; };
 		3A38CF73356D41C4877C534A /* OpenGLES.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -108,6 +128,38 @@
 		4D8BF21C201717E100CE2930 /* TCAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAlertHelper.m; sourceTree = "<group>"; };
 		4D8BF21F2017229800CE2930 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D8BF2222017230A00CE2930 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4DC1636760C545F7B91E0B1E /* CDVCordovaReplay.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = CDVCordovaReplay.swift; path = "cordova-replay/CDVCordovaReplay.swift"; sourceTree = "<group>"; };
+		4DDA1B002019798A00623798 /* LSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSImagePicker.h; sourceTree = "<group>"; };
+		4DDA1B012019798A00623798 /* LSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSImagePicker.m; sourceTree = "<group>"; };
+		4DDA1B032019799700623798 /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		4DDA1B042019799700623798 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		4DDA1B052019799700623798 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		4DDA1B062019799800623798 /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		4DDA1B072019799800623798 /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		4DDA1B082019799800623798 /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		4DDA1B092019799800623798 /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		4DDA1B0A2019799800623798 /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		4DDA1B0B2019799800623798 /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		4DDA1B0C2019799800623798 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		4DDA1B0D2019799800623798 /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		4DDA1B0E2019799800623798 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		4DDA1B0F2019799900623798 /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		4DDA1B102019799900623798 /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		4DDA1B112019799900623798 /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		4DDA1B122019799900623798 /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		4DDA1B132019799900623798 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		4DDA1B142019799900623798 /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		4DDA1B152019799900623798 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		4DDA1B162019799900623798 /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		4DDA1B172019799900623798 /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		4DDA1B182019799900623798 /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		4DDA1B192019799A00623798 /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		4DDA1B1A2019799A00623798 /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		4DDA1B1B2019799A00623798 /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		4DDA1B1C2019799A00623798 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		4DDA1B1D2019799A00623798 /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		4DDA1B1E2019799A00623798 /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		4DDA1B1F2019799A00623798 /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		4EE021A34ACA469BB18AE3F9 /* libc++.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		567C0259D7D649E586C7CC0E /* RTCVideoTrack.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCVideoTrack.h; path = "cordova-plugin-iosrtc/RTCVideoTrack.h"; sourceTree = "<group>"; };
 		56F6D840CB054095ACAE8386 /* RTCPeerConnectionFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnectionFactory.h; path = "cordova-plugin-iosrtc/RTCPeerConnectionFactory.h"; sourceTree = "<group>"; };
@@ -134,8 +186,10 @@
 		BD60DCD1E31841F9A002909B /* AudioToolbox.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C0BF5B790977472CB3188DCF /* PluginEnumerateDevices.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = PluginEnumerateDevices.swift; path = "cordova-plugin-iosrtc/PluginEnumerateDevices.swift"; sourceTree = "<group>"; };
 		C454E330A0E24969AEDC5FB1 /* cordova-plugin-iosrtc-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "cordova-plugin-iosrtc-Bridging-Header.h"; path = "cordova-plugin-iosrtc/cordova-plugin-iosrtc-Bridging-Header.h"; sourceTree = "<group>"; };
+		C80DFC652BCD4C02826EC33F /* ReplayKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
 		CB1DAB8CEDA7430989D05726 /* PluginRTCPeerConnectionConstraints.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = PluginRTCPeerConnectionConstraints.swift; path = "cordova-plugin-iosrtc/PluginRTCPeerConnectionConstraints.swift"; sourceTree = "<group>"; };
 		CEBF8ABEE3404A36BC80F244 /* RTCNSGLVideoView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCNSGLVideoView.h; path = "cordova-plugin-iosrtc/RTCNSGLVideoView.h"; sourceTree = "<group>"; };
+		D43DB403AAB646618739BBF7 /* cordova-replay-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "cordova-replay-Bridging-Header.h"; path = "cordova-replay/cordova-replay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D711E1461C5141268570EC96 /* RTCEAGLVideoView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCEAGLVideoView.h; path = "cordova-plugin-iosrtc/RTCEAGLVideoView.h"; sourceTree = "<group>"; };
 		D88351770CC8493692376823 /* RTCTypes.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RTCTypes.h; path = "cordova-plugin-iosrtc/RTCTypes.h"; sourceTree = "<group>"; };
 		DD2601011B554EE0ACBC3A2B /* CoreVideo.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -176,6 +230,8 @@
 				B9CF87CFD77B495F8925CE0E /* libstdc++.dylib in Frameworks */,
 				1B398C54CF904D3889155C13 /* libsqlite3.0.dylib in Frameworks */,
 				67129FA96E4B47A78027CA2D /* VideoToolbox.framework in Frameworks */,
+				BE898A5A6667470FAA9C2763 /* ReplayKit.framework in Frameworks */,
+				F9C351A6EEE3495184549BB5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +241,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4DDA1AFB2019795000623798 /* cordova-plugin-LSImagePicker */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
@@ -260,6 +317,8 @@
 				77D68D55BD7349A9ABD151CD /* libstdc++.dylib */,
 				40F56753962A4B3085CAC5A7 /* libsqlite3.0.dylib */,
 				92CE83F532BE451A92511781 /* VideoToolbox.framework */,
+				C80DFC652BCD4C02826EC33F /* ReplayKit.framework */,
+				34E14F0E846544F9837A4979 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,6 +391,8 @@
 				157ACAB6181D45748A72744A /* RTCVideoSource.h */,
 				567C0259D7D649E586C7CC0E /* RTCVideoTrack.h */,
 				C454E330A0E24969AEDC5FB1 /* cordova-plugin-iosrtc-Bridging-Header.h */,
+				4DC1636760C545F7B91E0B1E /* CDVCordovaReplay.swift */,
+				D43DB403AAB646618739BBF7 /* cordova-replay-Bridging-Header.h */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -344,6 +405,52 @@
 				4D8BF21C201717E100CE2930 /* TCAlertHelper.m */,
 			);
 			path = "cordova-plugin-tonyAlert";
+			sourceTree = "<group>";
+		};
+		4DDA1AFB2019795000623798 /* cordova-plugin-LSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA1B002019798A00623798 /* LSImagePicker.h */,
+				4DDA1B012019798A00623798 /* LSImagePicker.m */,
+				4DDA1AFE2019795000623798 /* TZImagePickerController */,
+			);
+			path = "cordova-plugin-LSImagePicker";
+			sourceTree = "<group>";
+		};
+		4DDA1AFE2019795000623798 /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				4DDA1B182019799900623798 /* NSBundle+TZImagePicker.h */,
+				4DDA1B112019799900623798 /* NSBundle+TZImagePicker.m */,
+				4DDA1B062019799800623798 /* TZAssetCell.h */,
+				4DDA1B0D2019799800623798 /* TZAssetCell.m */,
+				4DDA1B162019799900623798 /* TZAssetModel.h */,
+				4DDA1B1D2019799A00623798 /* TZAssetModel.m */,
+				4DDA1B102019799900623798 /* TZGifPhotoPreviewController.h */,
+				4DDA1B152019799900623798 /* TZGifPhotoPreviewController.m */,
+				4DDA1B082019799800623798 /* TZImageCropManager.h */,
+				4DDA1B1E2019799A00623798 /* TZImageCropManager.m */,
+				4DDA1B1A2019799A00623798 /* TZImageManager.h */,
+				4DDA1B1B2019799A00623798 /* TZImageManager.m */,
+				4DDA1B0E2019799800623798 /* TZImagePickerController.bundle */,
+				4DDA1B072019799800623798 /* TZImagePickerController.h */,
+				4DDA1B172019799900623798 /* TZImagePickerController.m */,
+				4DDA1B0F2019799900623798 /* TZLocationManager.h */,
+				4DDA1B132019799900623798 /* TZLocationManager.m */,
+				4DDA1B1F2019799A00623798 /* TZPhotoPickerController.h */,
+				4DDA1B032019799700623798 /* TZPhotoPickerController.m */,
+				4DDA1B122019799900623798 /* TZPhotoPreviewCell.h */,
+				4DDA1B0A2019799800623798 /* TZPhotoPreviewCell.m */,
+				4DDA1B142019799900623798 /* TZPhotoPreviewController.h */,
+				4DDA1B192019799A00623798 /* TZPhotoPreviewController.m */,
+				4DDA1B042019799700623798 /* TZProgressView.h */,
+				4DDA1B092019799800623798 /* TZProgressView.m */,
+				4DDA1B0B2019799800623798 /* TZVideoPlayerController.h */,
+				4DDA1B1C2019799A00623798 /* TZVideoPlayerController.m */,
+				4DDA1B0C2019799800623798 /* UIView+Layout.h */,
+				4DDA1B052019799700623798 /* UIView+Layout.m */,
+			);
+			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
@@ -385,11 +492,11 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 910;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = GJ7RN3GE99;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 910;
 					};
 				};
 			};
@@ -440,6 +547,7 @@
 				4D8BF2232017230B00CE2930 /* .gitignore in Resources */,
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				4DDA1B252019799B00623798 /* TZImagePickerController.bundle in Resources */,
 				4D8BF2212017229900CE2930 /* README.md in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
 			);
@@ -473,20 +581,36 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				4DDA1B292019799B00623798 /* TZImagePickerController.m in Sources */,
 				D6720FB2775D4135B985AD13 /* iosrtcPlugin.swift in Sources */,
 				789EA80FEE6748AFBF10ED63 /* PluginRTCTypes.swift in Sources */,
+				4DDA1B022019798A00623798 /* LSImagePicker.m in Sources */,
 				FDF3AC10966945BB8D3E383B /* PluginRTCPeerConnection.swift in Sources */,
+				4DDA1B2D2019799B00623798 /* TZAssetModel.m in Sources */,
 				F452F68C71A1497B8B124C09 /* PluginRTCPeerConnectionConfig.swift in Sources */,
 				4945CBBBE66E46A2AA2E2148 /* PluginRTCPeerConnectionConstraints.swift in Sources */,
+				4DDA1B262019799B00623798 /* NSBundle+TZImagePicker.m in Sources */,
 				EDE10EFB37394CE0BA4011C1 /* PluginRTCDataChannel.swift in Sources */,
+				4DDA1B202019799B00623798 /* TZPhotoPickerController.m in Sources */,
+				4DDA1B2B2019799B00623798 /* TZImageManager.m in Sources */,
+				4DDA1B212019799B00623798 /* UIView+Layout.m in Sources */,
 				4D8BF21D201717E100CE2930 /* TCAlertHelper.m in Sources */,
+				4DDA1B272019799B00623798 /* TZLocationManager.m in Sources */,
+				4DDA1B232019799B00623798 /* TZPhotoPreviewCell.m in Sources */,
+				4DDA1B2C2019799B00623798 /* TZVideoPlayerController.m in Sources */,
+				4DDA1B242019799B00623798 /* TZAssetCell.m in Sources */,
 				4DEEB51D6EEA45D3A3290DAB /* PluginRTCDTMFSender.swift in Sources */,
 				A5376DCE34164B6293882723 /* PluginMediaStream.swift in Sources */,
+				4DDA1B222019799B00623798 /* TZProgressView.m in Sources */,
 				9B31C1029CDE43E186852BDA /* PluginMediaStreamTrack.swift in Sources */,
 				F003E42A5E4D46A98B655317 /* PluginGetUserMedia.swift in Sources */,
+				4DDA1B2A2019799B00623798 /* TZPhotoPreviewController.m in Sources */,
 				9A33880D9E884A4982F05318 /* PluginEnumerateDevices.swift in Sources */,
 				FDA1633205FB4B60BE2107E4 /* PluginUtils.swift in Sources */,
 				019C7676234D473DA0401182 /* PluginMediaStreamRenderer.swift in Sources */,
+				4DDA1B2E2019799B00623798 /* TZImageCropManager.m in Sources */,
+				04A467E26DC247EB9EAF165C /* CDVCordovaReplay.swift in Sources */,
+				4DDA1B282019799B00623798 /* TZGifPhotoPreviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

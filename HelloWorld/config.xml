@@ -26,6 +26,9 @@
     <feature name="ocAlertModel">
         <param name="ios-package" value="TCAlertHelper" />
     </feature>
+    <feature name="cordova-plugin-LSImagePicker">
+        <param name="ios-package" value="LSImagePicker" />
+    </feature>
     <name>HelloWorld</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -57,4 +60,8 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
+    <feature name="CordovaReplay">
+        <param name="ios-package" value="CordovaReplay" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>
