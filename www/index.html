@@ -33,6 +33,7 @@
                 cordova.plugins.Replay.startRecording(true,
                                                       function() {
                                                         isRecording = true;
+                                                        console.log('开始录制');
                                                       }, function(err) {
                                                         console.log(err);
                                                       }
@@ -42,8 +43,9 @@
             function stopRecording() {
                 cordova.plugins.Replay.stopRecording(
                                                      function() {
-                                                     isRecording = false;
-                                                        console.log('ok!');
+                                                        isRecording = false;
+                                                        console.log('完成录制 JavaScript');
+                                                        cordova.exec(alertSuccess,alertFail,"cordova-plugin-LSImagePicker","getLastVideo",[]);
                                                      }, function(err) {
                                                         console.log(err);
                                                      }

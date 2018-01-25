@@ -9,4 +9,5 @@
 
 @interface LSImagePicker : CDVPlugin
 - (void)pushTZImagePickerController:(CDVInvokedUrlCommand *)command;
+- (void)getLastVideo:(CDVInvokedUrlCommand *)command;
 @end

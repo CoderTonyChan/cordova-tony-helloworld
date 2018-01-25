@@ -108,4 +108,33 @@
 }
 
 
+
+/**
+ 可以用于保存后的操作
+ 拿到最新的视频
+
+ @param command
+ */
+- (void)getLastVideo:(CDVInvokedUrlCommand *)command {
+    [TZImageManager manager].sortAscendingByModificationDate = NO;
+    [[TZImageManager manager] getCameraRollAlbum:YES allowPickingImage:NO completion:^(TZAlbumModel *model) {
+        [[TZImageManager manager] getAssetsFromFetchResult:model.result allowPickingVideo:YES allowPickingImage:NO completion:^(NSArray<TZAssetModel *> *models) {
+            [[TZImageManager manager] getVideoOutputPathWithAsset:models.firstObject.asset presetName:AVAssetExportPreset640x480 success:^(NSString *outputPath) {
+                NSLog(@"%@ --- /长度%@",outputPath,models.firstObject.timeLength);
+                CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:outputPath];
+                //通过cordova框架中的callBackID回调至JS的回调函数上
+                [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+            } failure:^(NSString *errorMessage, NSError *error) {
+                NSLog(@"视频导出失败:%@,error:%@",errorMessage, error);
+                NSString *errorMsg = [NSString stringWithFormat:@"视频导出失败:%@,error:%@",errorMessage, error];
+                CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:errorMsg];
+                [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+            }];
+//            NSLog(@"%@",models);
+        }];
+//        NSLog(@"%@",model);
+    }];
+}
+
+
 @end
